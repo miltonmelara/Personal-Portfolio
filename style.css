@@ -1,0 +1,84 @@
+
+/*General stylings*/
+html{
+    margin: 0;
+}
+body{
+    margin: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+}
+.title{
+    font-weight: bold;
+}
+/*Header*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+}
+.nav-content{
+    margin-right: 20px;
+}
+.nav{
+    text-decoration: none;
+    color: black;
+}
+/*About me section*/
+#about-me{
+    display: flex;
+}
+#about-me p{
+    width: 70%;
+}
+#profile-pic{
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 100px;
+}
+/*Projects section*/
+#projects{
+    width: 100%;
+}
+img{
+    width: 80%;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.second-img{
+    margin-top: 10px;
+}
+.clickable{
+    font-size: 0.8rem;
+    list-style-image: image('./Media/bullet for list.png');
+    font-weight: lighter;
+}
+.clickable:hover{
+    color: blue;
+}
+/*Screens bigger than 1024px and smaller tha 1600px*/
+@media only screen and (min-width: 1024px) and (max-width:1599px){
+    #about-me,
+    .clickable,
+    footer{
+        font-size: 1.2rem;
+    }
+}
+/*Screens bigger than 1600px*/
+@media only screen and (min-width: 1599px){
+    body,
+    #about-me,
+    #projects,
+    .clickable,
+    footer{
+        font-size: 2rem;
+    }
+}

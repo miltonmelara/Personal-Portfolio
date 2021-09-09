@@ -4,17 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Milton Melara</h1>
+        <h1 class="title">Milton Melara</h1>
         <nav>
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <p class="nav-content"><a href="#about-me" class="nav">About Me</a></p>
+            <p class="nav-content"><a href="#projects" class="nav">Projects</a></p>
+            <p class="nav-content"><a href="#contact" class="nav">Contact</a></li></p>
         </nav>
     </header>
+    <main>
+        <h2 class="title">About Me</h2>
+        <div id="about-me">
+            <div id="description-container">
+            <p class="about">I'm Milton, 9th grade student at school. I've been programming for more than one year. I have a girlfriend who is the best in the world that I wouldn't change for anything.</p>
+            <p class="about">I like to read, play sports such as soccer, basketball, hockey, etc., I like to play videogames, etc.</p>
+            </div>
+            <div id="profile">
+                <img src="./Media/WhatsApp Image 2021-07-21 at 4.42.27 PM (3) copy.jpeg" alt="Me and my girlfriend" id="profile-pic">
+            </div>
+        </div>
+        <div id="projects">
+            <h2 class="sub-title title">Projects</h2>
+            <h3 class="list clickable" id="mixed-title">Mixed Messages</h3>
+            <div class="project" id="mixed-messages">
+                <p class="description">This project creates a message using 9 sets of words.</p>
+                <img src="./Media/Mixed Messages/Screen Shot 2021-09-03 at 5.10.46 PM.png" alt="Code Snippet">
+                <img src="./Media/Mixed Messages/Screen Shot 2021-09-03 at 5.11.01 PM.png" alt="Output of code" class="second-img">
+            </div>
+            <h3 class="list clickable" id="company-title">Company Homepage</h3>
+            <div class="project" id="company-homepage">
+                <p class="description">This project is the homepage of a madeup company.</p>
+                <img src="./Media/Company page/Screen Shot 2021-09-08 at 5.17.39 PM.png" alt="Code Snippet">
+                <img src="./Media/Company page/Screen Shot 2021-09-08 at 5.18.27 PM.png" alt="Output" class="second-img">
+            </div>
+            <h3 class="list clickable" id="cheatsheet-title">CSS Cheatsheet</h3>
+            <div class="project" id="css-cheatsheet">
+                <p class="description">This project shows a cheatsheet from CSS selectors</p>
+                <img src="./Media/Html and CSS cheatsheet/Screen Shot 2021-09-08 at 5.37.30 PM.png" alt="Code Snippet">
+                <img src="./Media/Html and CSS cheatsheet/Screen Shot 2021-09-08 at 5.38.01 PM.png" alt="Output" class="second-img">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3 class="title">Contact info</h3>
+        <p>Mail: milton.melara3b@gmail.com</p>
+    </footer>
 </body>
 </html>
